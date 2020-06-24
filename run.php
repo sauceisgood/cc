@@ -1,14 +1,14 @@
 <?php
 require "./cc.class.php";
 echo("###############################################\n");
-echo("#     Auto Generate + Checker CC Extrap       #\n");
+echo("#     Gerador cc e BIN Checker.               #\n");
 echo("###############################################\n");
-echo("# Create By : Kyuoko                          #\n");
+echo("# Create By : Thorero                         #\n");
 echo("# Code : PHP                                  #\n");
-echo("# Thx To UKL-TEAM, GFS-TEAM, AND YOU          #\n");
+echo("# Thx To Thorero                              #\n");
 echo("###############################################\n");
 echo "[+] BIN : "; $bin = trim(fgets(STDIN));
-echo "[+] Check Status Valid ? 1/0 : "; $check = trim(fgets(STDIN));
-echo "[+] Amount/Jumlah : "; $amount = trim(fgets(STDIN));
+echo "[+] Validar? ? 1/0 : "; $check = trim(fgets(STDIN));
+echo "[+] Amount : "; $amount = trim(fgets(STDIN));
 $new = new CC($bin, $check, $amount);
 echo $new->Execute();
